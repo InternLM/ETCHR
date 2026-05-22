@@ -42,7 +42,7 @@ By decoupling the specialized image editor from the downstream understanding mod
 
 </p>
 <p style="text-align: center;"> 
-  <img src="assets/method.png" alt="Teaser" width="100%"> 
+  <img src="assets/overview.png" alt="Teaser" width="100%"> 
 </p>
 
 
