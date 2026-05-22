@@ -26,6 +26,7 @@
   | 🤗<a href="https://huggingface.co/internlm/ETCHR-FLUX.2-klein-9B">ETCHR-FLUX.2-klein-9B Model</a >
   | 🤗<a href="https://huggingface.co/datasets/internlm/ETCHR-SFT-400K">ETCHR SFT-400K Dataset</a >
   | 🤗<a href="https://huggingface.co/datasets/internlm/ETCHR-GRPO-10K">ETCHR GRPO-10K Dataset</a >
+  | 🤗<a href="https://huggingface.co/datasets/internlm/DL3DV-2k">DL3DV-2K Benchmark</a >
   </p > 
 </div>
 
@@ -68,7 +69,7 @@ pip install "vllm>=0.11.0"
 pip install qwen-vl-utils==0.0.14
 ```
 
-We Provide an example code running ETCHR on DL3DV Bench in ```Evaluation/inference_dl3dv.py```, you can start the evaluation with the following two steps:
+We Provide an example code running ETCHR on [DL3DV-2K Benchmark](https://huggingface.co/datasets/internlm/DL3DV-2k) in ```Evaluation/inference_dl3dv.py```, you can start the evaluation with the following two steps:
 
 **Step 1:** start a VLLM server for an understanding model (eg. Qwen3-VL-8B, Kimi K2.5, ...).
 ```bash

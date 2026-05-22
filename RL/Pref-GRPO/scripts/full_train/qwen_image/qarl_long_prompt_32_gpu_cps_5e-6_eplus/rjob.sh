@@ -1,0 +1,12 @@
+rjob submit --name=qwenimage-qarl-long-prompt-32-gpu-cps-5e-6-eplus \
+--gpu=8 --memory=800000 \
+--cpu=80 \
+--charged-group=mllmexp_gpu \
+--private-machine=group \
+--mount=gpfs://gpfs1/mllm:/mnt/shared-storage-user/mllm \
+--mount=gpfs://gpfs1/large-model-center-share-weights:/mnt/shared-storage-user/large-model-center-share-weights \
+--image=registry.h.pjlab.org.cn/ailab/pytorch:2.7.0-cuda12.8.1-py3.12-ubuntu24.04 \
+-P 4 \
+--host-network=true \
+-e DISTRIBUTED_JOB=true \
+-- bash -ex /mnt/shared-storage-user/mllm/xinglong/Pref-GRPO/scripts/full_train/qwen_image/qarl_long_prompt_32_gpu_cps_5e-6_eplus/finetune_qarl_qwen_image.sh

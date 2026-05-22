@@ -1,0 +1,32 @@
+我想要借助这个框架实现一个qarl的训练，具体来说就是一个新的 reward 方式
+
+核心功能：让 vlm 根据生成的图片回答 qa，然后将回答的 acc 作为 reward
+
+/mnt/shared-storage-user/mllm/xinglong/Pref-GRPO 是一个基于 /mnt/shared-storage-user/mllm/xinglong/DanceGRPO 进行了改进的版本
+我其实已经在/mnt/shared-storage-user/mllm/xinglong/DanceGRPO实现过 qarl（/mnt/shared-storage-user/mllm/xinglong/DanceGRPO/scripts/finetune/flux/1more_qarl/main/finetune_flux_grpo.sh），现在相当于进行了迁移
+因此可以参考原来的实现
+
+
+
+实现步骤如下
+1. 首先需要把各部分接口写好
+包括选择 qarl reward模式，可以兼容该框架能选择权重
+以及 dataset 需要能 load keep_qa_list,使用的训练数据集仍然是/mnt/shared-storage-user/mllm/xinglong/DanceGRPO/grocery/qa_construction/3_filter_qa/3more_qa_24447.jsonl，所以可以使用它进行参考
+
+2.  核心 qarl 部分
+可以参考/mnt/shared-storage-user/mllm/xinglong/DanceGRPO/fastvideo/reward/qarl_reward.py
+**但是与原来不同的是**：
+2.1 我希望对于同一个 prompt roll 出来的不同的图片，面对的 qalist 及选项顺序是完全一样的
+也就是说无论all_qa 模式还是 sample qa_num模式，我希望在 vlm 根据同一 prompt 不同图片回答的时候，选择的qa 以及 option 顺序一样的，而不是最后再 shuffle
+
+3. query vlm server的时候默认多线程，线程数为 8
+因为 vllm server 效率很高，所以类似原来DanceGRPO的逐个 query效率会很低，
+
+但是要保留def compute_qa_score_with_details(方便当我启用“check_qa”参数的时候，能够方便查看存下来的图片以及 qa 的情况
+
+3. 需要有 unit test 脚本，对新写的不同的函数进行测试
+
+4. 启动脚本
+/mnt/shared-storage-user/mllm/xinglong/Pref-GRPO/scripts/full_train/flux/qarl
+
+

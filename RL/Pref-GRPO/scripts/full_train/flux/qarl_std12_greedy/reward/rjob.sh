@@ -1,0 +1,12 @@
+rjob submit --name=qwen-vl-server \
+--gpu=8 --memory=1200000 \
+--cpu=120 \
+--charged-group=mllmexp_gpu \
+--private-machine=group \
+--mount=gpfs://gpfs1/mllm:/mnt/shared-storage-user/mllm \
+--mount=gpfs://gpfs1/large-model-center-share-weights:/mnt/shared-storage-user/large-model-center-share-weights \
+--image=registry.h.pjlab.org.cn/ailab-mllmexp-mllmexp_gpu/caoyuhang:lmm-r1-qwen3vl-v2 \
+-P 1 \
+--host-network=true \
+-e DISTRIBUTED_JOB=true \
+-- bash -ex /mnt/shared-storage-user/mllm/xinglong/Pref-GRPO/scripts/full_train/flux/qarl_std12_greedy/reward/launch.sh

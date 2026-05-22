@@ -1,0 +1,13 @@
+rjob submit --name=flux-rl-embeddings-expand-long-prompt \
+--gpu=3 --memory=300000 \
+--cpu=60 \
+--charged-group=mllm_gpu \
+--namespace=ailab-mllm \
+--private-machine=group \
+--mount=gpfs://gpfs1/mllm:/mnt/shared-storage-user/mllm \
+--mount=gpfs://gpfs1/large-model-center-share-weights:/mnt/shared-storage-user/large-model-center-share-weights \
+--image=registry.h.pjlab.org.cn/ailab/pytorch:2.7.0-cuda12.8.1-py3.12-ubuntu24.04 \
+-P 1 \
+--host-network=true \
+-e DISTRIBUTED_JOB=true \
+-- bash -ex /mnt/shared-storage-user/mllm/xinglong/Pref-GRPO/scripts/preprocess/flux_expand_long_prompt/preprocess_flux_rl_embeddings.sh
