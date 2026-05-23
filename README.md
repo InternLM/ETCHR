@@ -31,7 +31,7 @@
 </div>
 
 ## 📢 News
-- 🚀 [2026/05/22] We have released the training and evaluation code of ETCHR.
+- 🚀 [2026/05/24] We have released the training and evaluation code of ETCHR.
 - 🚀 [2026/05/21] We have released the [ETCHR-FLUX.2-klein-9B Model](https://huggingface.co/internlm/ETCHR-FLUX.2-klein-9B), [ETCHR-SFT-400K Dataset](https://huggingface.co/datasets/internlm/ETCHR-SFT-400K) and [ETCHR GRPO-10K Dataset](https://huggingface.co/datasets/internlm/ETCHR-GRPO-10K).
 
   
