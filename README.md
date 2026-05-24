@@ -24,7 +24,7 @@
     📖<a href="https://arxiv.org/abs/">Paper</a>
   | 🏠<a href="https://github.com/InternLM/ETCHR">Homepage</a >
   | 🤗<a href="https://huggingface.co/internlm/ETCHR-FLUX.2-klein-9B">ETCHR-FLUX.2-klein-9B Model</a >
-  | 🤗<a href="https://huggingface.co/datasets/internlm/ETCHR-SFT-400K">ETCHR SFT-400K Dataset</a >
+  | 🤗<a href="https://huggingface.co/datasets/BeichenZhang/ETCHR-SFT-400K">ETCHR SFT-400K Dataset</a >
   | 🤗<a href="https://huggingface.co/datasets/internlm/ETCHR-GRPO-10K">ETCHR GRPO-10K Dataset</a >
   | 🤗<a href="https://huggingface.co/datasets/internlm/DL3DV-2k">DL3DV-2K Benchmark</a >
   </p > 
@@ -32,7 +32,7 @@
 
 ## 📢 News
 - 🚀 [2026/05/24] We have released the training and evaluation code of ETCHR.
-- 🚀 [2026/05/21] We have released the [ETCHR-FLUX.2-klein-9B Model](https://huggingface.co/internlm/ETCHR-FLUX.2-klein-9B), [ETCHR-SFT-400K Dataset](https://huggingface.co/datasets/internlm/ETCHR-SFT-400K) and [ETCHR GRPO-10K Dataset](https://huggingface.co/datasets/internlm/ETCHR-GRPO-10K).
+- 🚀 [2026/05/21] We have released the [ETCHR-FLUX.2-klein-9B Model](https://huggingface.co/internlm/ETCHR-FLUX.2-klein-9B), [ETCHR-SFT-400K Dataset](https://huggingface.co/datasets/BeichenZhang/ETCHR-SFT-400K) and [ETCHR GRPO-10K Dataset](https://huggingface.co/datasets/internlm/ETCHR-GRPO-10K).
 
   
 ## 🌈 Overview
