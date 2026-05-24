@@ -30,7 +30,7 @@ The SFT corpus consists of curated question-edit trajectories, including five ca
 - **Jigsaw Reasoning:** Sourced from Spatial-SSRL, mapping scrambled inputs to fully restored image grids.  
 - **3D Understanding:** Extracted from DL3DV-10K camera extrinsics to simulate realistic viewpoint transitions.
 
-You can download the training parquet files from [https://huggingface.co/datasets/internlm/ETCHR-SFT-400K](https://huggingface.co/datasets/internlm/ETCHR-SFT-400K) and run ```SFT/prepare_data.py```, which organizes the training data from the parquet into the directory structure and format corresponding to ```SFT/data/sft_data.csv```.
+You can download the training parquet files from [https://huggingface.co/datasets/internlm/ETCHR-SFT-400K](https://huggingface.co/datasets/BeichenZhang/ETCHR-SFT-400K) and run ```SFT/prepare_data.py```, which organizes the training data from the parquet into the directory structure and format corresponding to ```SFT/data/sft_data.csv```.
 
 
 
