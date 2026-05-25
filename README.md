@@ -112,8 +112,12 @@ ETCHR can assist with a broad spectrum of understanding tasks, including fine-gr
 ## ✒️Citation
 If you find this project useful, please kindly cite:
 ```
-
-
+@article{zhang2026etchr,
+  title={ETCHR: Editing To Clarify and Harness Reasoning},
+  author={Beichen Zhang, Yuhong Liu, Jinsong Li, Yuhang Zang, Jiaqi Wang, Dahua Lin},
+  journal={arXiv preprint arXiv:2605.23897},
+  year={2026}
+}
 ```
 
 ## 📄 License
