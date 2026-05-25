@@ -21,7 +21,7 @@
   </p >
   <p align="center" style="font-size: 1em; margin-top: -1em"> <sup>&ast;</sup>Equal Contribution  <sup>&dagger;</sup>Corresponding authors. </p >
   <p align="center" style="font-size: 1.2em; margin-top: 0.5em">
-    📖<a href="https://arxiv.org/abs/">Paper</a>
+    📖<a href="https://arxiv.org/abs/2605.23897">Paper</a>
   | 🏠<a href="https://github.com/InternLM/ETCHR">Homepage</a >
   | 🤗<a href="https://huggingface.co/internlm/ETCHR-FLUX.2-klein-9B">ETCHR-FLUX.2-klein-9B Model</a >
   | 🤗<a href="https://huggingface.co/datasets/BeichenZhang/ETCHR-SFT-400K">ETCHR SFT-400K Dataset</a >
